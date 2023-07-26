@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"fcm\startup_stm32f103xb.o"
+"fcm\main.o"
+"fcm\gpio.o"
+"fcm\stm32f1xx_it.o"
+"fcm\stm32f1xx_hal_msp.o"
+"fcm\tim.o"
+"fcm\stm32f1xx_hal_gpio_ex.o"
+"fcm\stm32f1xx_hal_tim.o"
+"fcm\stm32f1xx_hal_tim_ex.o"
+"fcm\stm32f1xx_hal.o"
+"fcm\stm32f1xx_hal_rcc.o"
+"fcm\stm32f1xx_hal_rcc_ex.o"
+"fcm\stm32f1xx_hal_gpio.o"
+"fcm\stm32f1xx_hal_dma.o"
+"fcm\stm32f1xx_hal_cortex.o"
+"fcm\stm32f1xx_hal_pwr.o"
+"fcm\stm32f1xx_hal_flash.o"
+"fcm\stm32f1xx_hal_flash_ex.o"
+"fcm\stm32f1xx_hal_exti.o"
+"fcm\system_stm32f1xx.o"
+"fcm\soft.o"
+--strict --scatter "FCM\FCM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FCM.map" -o FCM\FCM.axf
